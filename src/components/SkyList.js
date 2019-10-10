@@ -19,15 +19,7 @@ export default function SkyList() {
 
     return (
         <div className="spaceStuff">
-            {pics.map(spaceStuff => {
-                return (
-                    <Skycard
-                        key={spaceStuff.id}
-                        title={spaceStuff.title}
-                        description={spaceStuff.explanation}
-                        hdurl={spaceStuff.hdurl} />
-                )
-            })}
+            {<Skycard data={pics} />}
         </div>
     )
 }
