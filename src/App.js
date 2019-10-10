@@ -1,12 +1,27 @@
 import React from "react";
+import SkyList from "./components/SkyList";
+import nasalogo from "./assets/nasalogo.jpeg";
 import "./App.css";
+
 
 function App() {
   return (
     <div className="App">
+
+      <div className="App-logo">
+        <img className="nasalogo" src={nasalogo} alt="vintage official logo" />
+        <h1>Nasa Photo of the Day</h1>
+
+        <div className="App-header">
+          <SkyList />
+        </div>
+
+
+
+      </div>
+
       <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
+
       </p>
     </div>
   );
