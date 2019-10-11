@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Skycard from "./SkyCard";
-import { Container, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 export default function SkyList() {
     const [pics, setPics] = useState([]);
